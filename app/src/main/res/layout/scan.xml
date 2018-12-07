@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="#202020"
+    android:orientation="vertical">
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/groupRadio">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="입고"
+        android:layout_weight="1"
+        android:textSize="24dp"
+        android:theme="@style/CustomRadioButton"
+        android:textColorHint="#A0A0A0"
+        android:textColor="#A0A0A0"
+        android:backgroundTint="#A0A0A0"
+        android:checked="true"
+        android:id="@+id/radioIn"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="24dp"
+        android:text="출고"
+        android:theme="@style/CustomRadioButton"
+        android:textColorHint="#A0A0A0"
+        android:textColor="#A0A0A0"
+        android:backgroundTint="#A0A0A0"
+        android:id="@+id/radioOut"/>
+</RadioGroup>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateCount"
+        android:hint="수정 할 수량을 입력해주세요."
+        android:textColorHint="#A0A0A0"
+        android:textColor="#A0A0A0"
+        android:backgroundTint="#A0A0A0"
+        android:inputType="number" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barImage"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A0A0A0"
+            android:textColor="#A0A0A0"
+            android:backgroundTint="#A0A0A0"
+            android:textSize="16dp"
+            android:text="상품명 : "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editName"
+            android:textColor="#A0A0A0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A0A0A0"
+            android:textColor="#A0A0A0"
+            android:backgroundTint="#A0A0A0"
+            android:textSize="16dp"
+            android:text="상품가격 : "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editPrice"
+            android:textColorHint="#A0A0A0"
+            android:textColor="#A0A0A0"
+            android:backgroundTint="#A0A0A0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A0A0A0"
+            android:textColor="#A0A0A0"
+            android:backgroundTint="#A0A0A0"
+            android:textSize="16dp"
+            android:text="상품수 : "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editCount"
+            android:textColorHint="#A0A0A0"
+            android:textColor="#A0A0A0"
+            android:backgroundTint="#A0A0A0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A0A0A0"
+            android:textColor="#A0A0A0"
+            android:backgroundTint="#A0A0A0"
+            android:textSize="16dp"
+            android:text="바코드 : "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editBarcode"
+            android:textColor="#A0A0A0" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subBtn"
+        android:text="등록"/>
+</LinearLayout>

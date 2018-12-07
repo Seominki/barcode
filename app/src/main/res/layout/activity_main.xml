@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="#202020"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textColor="#A0A0A0"
+        android:text="바코드를 활용한 재고관리"
+        android:textSize="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/editId"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#A0A0A0"
+        android:textColor="#A0A0A0"
+        android:textCursorDrawable="@null"
+        android:backgroundTint="#A0A0A0"
+        android:hint="ID"
+        android:layout_marginTop="151dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/editPw"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:textColorHint="#A0A0A0"
+        android:textColor="#A0A0A0"
+        android:textCursorDrawable="@null"
+        android:backgroundTint="#A0A0A0"
+        android:layout_below="@+id/editId" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="로그인"
+        android:id="@+id/loginBtn"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editPw"
+        android:layout_toStartOf="@+id/signupBtn" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="회원가입"
+        android:id="@+id/signupBtn"
+        android:textAllCaps="false"
+        android:layout_alignTop="@+id/loginBtn"
+        android:layout_alignEnd="@+id/editPw" />
+
+</RelativeLayout>

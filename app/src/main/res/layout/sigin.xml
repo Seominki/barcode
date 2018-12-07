@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="#202020">
+    <Spinner
+        android:id="@+id/companyCode"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#A0A0A0"
+        android:textColor="#A0A0A0"
+        android:backgroundTint="#A0A0A0"
+        android:hint="Company"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/siginId"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#A0A0A0"
+        android:textColor="#A0A0A0"
+        android:textCursorDrawable="@null"
+        android:backgroundTint="#A0A0A0"
+        android:hint="ID"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/companyCode" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/siginPw"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:textColorHint="#A0A0A0"
+        android:textColor="#A0A0A0"
+        android:textCursorDrawable="@null"
+        android:backgroundTint="#A0A0A0"
+        android:layout_below="@+id/siginId" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/siginConfirm"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:hint="Confirm PW"
+        android:textColorHint="#A0A0A0"
+        android:textColor="#A0A0A0"
+        android:textCursorDrawable="@null"
+        android:backgroundTint="#A0A0A0"
+        android:layout_below="@+id/siginPw" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/siginName"
+        android:layout_centerHorizontal="true"
+        android:hint="Name"
+        android:textColorHint="#A0A0A0"
+        android:textColor="#A0A0A0"
+        android:textCursorDrawable="@null"
+        android:backgroundTint="#A0A0A0"
+        android:layout_below="@+id/siginConfirm" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:text="확인"
+        android:id="@+id/checkBtn"
+        android:textAllCaps="false"
+        android:layout_below="@+id/siginName"
+        android:layout_alignEnd="@+id/siginName" />
+</RelativeLayout>

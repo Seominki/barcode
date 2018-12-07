@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="company_array">
+        <item>본사</item>
+        <item>서울지점</item>
+    </string-array>
+</resources>

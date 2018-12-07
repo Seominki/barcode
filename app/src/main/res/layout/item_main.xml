@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#202020">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/ivPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/ivPhoto"
+        android:layout_toEndOf="@+id/ivPhoto"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textColor="#A0A0A0"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="content"
+            android:textColor="#A0A0A0"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tvCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="count"
+            android:textColor="#A0A0A0"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:id="@+id/tvBarcode"
+            android:layout_width="255dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>
